@@ -2,10 +2,10 @@
 
 :root {
   /* sizes */
+  --fsize-nav: 0.625rem;
   --fsize-h1: 7.5rem;
   --fsize-h2: 6rem;
   --fsize-h3: 4rem;
-  --fsize-h4: 3rem
   --fsize-body: 2rem;
 
   /* height and width */
@@ -17,7 +17,7 @@
   --black: #000;
   --off-white: #ffffffc6;
 
-  /* Gutters or alleys are spacing between content tracks */
+  /* Gutters or alleys are spacing between content tracks just like gaps */
   --gutter-xx-small: 2rem;
   --gutter-x-small: 3rem;
   --gutter-small: 4rem;
@@ -65,12 +65,23 @@ nav {
 @media(max-width: 250px) {
   nav {
     justify-content: center;
+    font-size: var(--fsize-nav);
+    gap: 1rem;
+  }
+}
+
+@media(max-width: 400px) {
+  nav {
+    justify-content: center;
+    font-size: var(--fsize-nav);
+    gap: 2rem;
   }
 }
 
 @media(max-width: 540px) {
   nav {
     justify-content: center;
+    font-size: var(--fsize-nav);
   }
 }
 
@@ -83,6 +94,7 @@ nav {
 @media(max-width: 800px) {
   nav {
     justify-content: center;
+    font-size: var(--fsize-h2);
   }
 }
 
